@@ -82,6 +82,10 @@ vim.o.confirm = true
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
 
+-- TAB-based indent without losing the selection
+vim.keymap.set("v", "<Tab>", ">gv", { desc = "Indent and reselect" })
+vim.keymap.set("v", "<S-Tab>", "<gv", { desc = "Outdent and reselect" })
+
 -- Clear highlights on search when pressing <Esc> in normal mode
 --  See `:help hlsearch`
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
