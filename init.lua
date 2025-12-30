@@ -684,6 +684,7 @@ require('lazy').setup({
       for server_name, server_config in pairs(servers) do
         server_config.capabilities = vim.tbl_deep_extend('force', {}, capabilities, server_config.capabilities or {})
         vim.lsp.config(server_name, server_config)
+        vim.lsp.enable(server_name)
       end
     end,
   },
