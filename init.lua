@@ -629,6 +629,9 @@ require('lazy').setup({
         -- But for many setups, the LSP (`ts_ls`) will work just fine
         -- ts_ls = {},
         --
+        qmlls = {
+          cmd = { 'qmlls6' },
+        },
 
         lua_ls = {
           -- cmd = { ... },
