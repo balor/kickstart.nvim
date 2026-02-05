@@ -613,7 +613,7 @@ require('lazy').setup({
       local servers = {
         -- clangd = {},
         gopls = {},
-        pyright = {},
+        ty = {},
         ruff = {},
 
         -- webdev stack
